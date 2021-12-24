@@ -40,7 +40,6 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
 }
 img {
   display: block;
@@ -50,10 +49,7 @@ img {
   display: flex;
 }
 /* <!--Header--> */
-.header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
+
 .header-nav {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -186,8 +182,6 @@ img {
   margin-bottom: 10px;
 }
 .hero-list {
-  padding-top: 94px;
-  padding-bottom: 94px;
   display: flex;
 }
 .hero-item {
@@ -195,10 +189,9 @@ img {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
-  /* identical to box height */
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--hero-text-color);
+  width: 270px;
 }
 .hero-after-title {
   font-style: normal;
@@ -211,10 +204,7 @@ img {
 .hero {
   padding-top: 94px;
 }
-/* <!--Our work section--> */
-.section-work {
-  padding-bottom: 94px;
-}
+
 .work-title {
   font-weight: bold;
   font-size: 36px;
@@ -241,14 +231,21 @@ img {
 }
 .img-flax {
   display: flex;
-  margin-top: 50px;
-  justify-content: center;
+  justify-content: flex-end;
 }
 .no-dote {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+.team-flax {
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-name-title {
   font-weight: 500;
   font-size: 16px;
@@ -312,6 +309,11 @@ img {
 .address:hover,
 .address:focus {
   color: #2196f3;
+}
+.address-cont {
+  padding: 0px 0px 0px 0px;
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 .contact-list {
   font-family: Roboto;
