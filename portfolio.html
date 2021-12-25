@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Psortfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,29 +24,33 @@
   <body>
     <!--Header portfolio-->
     <header class="header-portfolio">
-      <nav class="header-nav">
-        <a class="header-logo link link-studio" lang="en" href="./index.html">
-          <span class="color-log">Web</span>Studio</a
-        >
-        <ul class="list header-list" lang="ru">
-          <li class="header-item link">
-            <a class="link header-link" href="./index.html">Студия</a>
-          </li>
-          <li class="header-item">
-            <a class="link header-link active-page" href="">Портфолио</a>
-          </li>
-          <li class="header-item">
-            <a class="link header-link" href="">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a class="header-logo link link-studio" lang="en" href="./index.html">
+            <span class="color-log">Web</span>Studio</a
+          >
+          <ul class="list header-list" lang="ru">
+            <li class="header-item link">
+              <a class="link header-link" href="./index.html">Студия</a>
+            </li>
+            <li class="header-item">
+              <a class="link header-link active-page" href="">Портфолио</a>
+            </li>
+            <li class="header-item">
+              <a class="link header-link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
 
-      <!--contacts sections -->
-      <div>
-        <a class="header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      </div>
-      <div>
-        <a class="header-contact" href="tel:+380961111111">+380961111111</a>
+        <!--contacts sections -->
+        <div class="contact-header">
+          <ul class="list header-dsaasd">
+            <li>
+              <a class="header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li><a class="header-contact" href="tel:+380961111111">+38 096 111 1111</a></li>
+          </ul>
+        </div>
       </div>
     </header>
 
