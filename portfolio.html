@@ -44,7 +44,7 @@
 
         <!--contacts sections -->
         <div class="contact-header">
-          <ul class="list header-dsaasd">
+          <ul class="list header-sections">
             <li>
               <a class="header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
@@ -56,31 +56,34 @@
 
     <!--sections main-->
     <main>
-      <section>
-        <h2 hidden>content</h2>
-        <a lang="ru"></a>
-        <ul class="list">
-          <li class="item">
-            <button class="filter-button btn-blu" type="button">Все</button>
-          </li>
-          <li class="item">
-            <button class="filter-button" type="button">Веб-сайты</button>
-          </li>
-          <li class="item">
-            <button class="filter-button" type="button">Приложения</button>
-          </li>
-          <li class="item">
-            <button class="filter-button" type="button">Дизайн</button>
-          </li>
-          <li class="item">
-            <button class="filter-button" type="button">Маркетинг</button>
-          </li>
-        </ul>
+      <section class="section-main">
+        <div class="container header-container">
+          <h2 class="visually-hidden" hidden>content</h2>
+          <a lang="ru"></a>
+          <ul class="list btn-row">
+            <li class="item">
+              <button class="filter-button btn-blu" type="button">Все</button>
+            </li>
+            <li class="item">
+              <button class="filter-button" type="button">Веб-сайты</button>
+            </li>
+            <li class="item">
+              <button class="filter-button" type="button">Приложения</button>
+            </li>
+            <li class="item">
+              <button class="filter-button" type="button">Дизайн</button>
+            </li>
+            <li class="item">
+              <button class="filter-button" type="button">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!--Projects-->
-      <div>
-        <section class="section-cardset">
+
+      <section class="section-cardset">
+        <div class="container">
           <ul class="list cardset-list">
             <li class="cardset-item-portfolio">
               <img src="./images/portfolio/portfolio1.png" alt="Технокряк" width="370" />
@@ -147,32 +150,34 @@
               <p class="cardset-after-title">Приложение</p>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <!--footer section-->
     <footer class="section-footer">
-      <a class="link-footer" href="/index.html">Web<span class="color-footer">Studio</span></a>
-      <div>
-        <address>
-          <ul class="list">
-            <li>
-              <a
-                class="address"
-                href="https://goo.gl/maps/Afqt2rmy2DsJCTwLA"
-                target="_blank"
-                rel="noopener noreferre"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
-            </li>
-            <li>
-              <a class="contact-list" href="mailto:info@devstudio.com">info@example.com</a>
-            </li>
-            <li>
-              <a class="contact-list" href="tel:+380961111111">+380991111111</a>
-            </li>
-          </ul>
-        </address>
+      <div class="container">
+        <a class="link-footer" href="/index.html">Web<span class="color-footer">Studio</span></a>
+        <div>
+          <address class="link-address">
+            <ul class="list address-cont">
+              <li>
+                <a
+                  class="address"
+                  href="https://goo.gl/maps/Afqt2rmy2DsJCTwLA"
+                  target="_blank"
+                  rel="noopener noreferre"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li>
+                <a class="contact-list" href="mailto:info@devstudio.com">info@example.com</a>
+              </li>
+              <li>
+                <a class="contact-list" href="tel:+380961111111">+38 099 111 1111</a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </footer>
   </body>

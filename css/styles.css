@@ -40,6 +40,7 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  outline: 2px solid red;
 }
 img {
   display: block;
@@ -47,6 +48,7 @@ img {
 }
 .header-container {
   display: flex;
+  justify-content: center;
 }
 /* <!--Header--> */
 
@@ -118,7 +120,7 @@ img {
   text-decoration: none;
   margin-left: 50px;
 }
-.header-dsaasd {
+.header-sections {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -335,30 +337,45 @@ img {
 }
 .filter-button {
   cursor: pointer;
-
+  font-family: Raleway;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-
   text-align: center;
   letter-spacing: 0.03em;
+  margin-left: 8px;
+  padding: 6px 22px;
+  border: #f5f4fa;
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
+    0px 2px 2px rgb(0 0 0 / 12%);
+  border-radius: 4px;
+}
+.btn-row {
+  display: flex;
 }
 .filter-button:hover,
 .filter-button:focus {
   background: #2196f3;
   color: #ffffff;
 }
+.section-main {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .active-page {
   color: #2196f3;
 }
 
 /* <!--Projects section-cardset-- > */
+.cardset-list {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .cardset-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 36px;
-
   letter-spacing: 0.06em;
   color: #212121;
 }
