@@ -21,6 +21,7 @@ h6 {
 }
 ul {
   margin: 0;
+  padding-inline-start: 0px;
 }
 
 .visually-hidden {
@@ -40,11 +41,11 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; (контур блока)  */
 }
 img {
   display: block;
-  margin-left: 30px;
+  /* margin-left: 30px; */
 }
 .header-container {
   display: flex;
@@ -76,7 +77,6 @@ img {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-
   color: #000000;
 }
 
@@ -102,6 +102,7 @@ img {
 .header-list {
   display: flex;
   align-items: center;
+  margin-left: 93px;
 }
 /* ховер для ссылок */
 .header-link:hover,
@@ -217,6 +218,9 @@ img {
   padding-top: 94px;
   padding-bottom: 50px;
 }
+.section-work {
+  padding-bottom: 94px;
+}
 .about-workers {
   background-color: #f5f4fa;
 }
@@ -233,16 +237,19 @@ img {
 }
 .img-flax {
   display: flex;
-  justify-content: flex-end;
 }
-.no-dote {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.team-photo:not(last-child) {
+  margin-right: 30px;
 }
+.item {
+  margin-right: 30px;
+}
+
 .team-flax {
   display: flex;
-  justify-content: flex-end;
+  background: #ffffff;
+  /* material shadow v1 */
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -360,7 +367,7 @@ img {
 }
 .section-main {
   padding-top: 94px;
-  padding-bottom: 94px;
+  margin-bottom: 50px;
 }
 .active-page {
   color: #2196f3;
@@ -384,4 +391,8 @@ img {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: #757575;
+}
+.cardset-item-portfolio:not(:nth-child(3n)) {
+  outline: 1px solid #eeeeee;
+  margin-right: 30px;
 }
