@@ -45,7 +45,6 @@ ul {
 }
 img {
   display: block;
-  /* margin-left: 30px; */
 }
 .header-container {
   display: flex;
@@ -135,6 +134,9 @@ img {
 
 /* <!--section button--> */
 .section-banner {
+  height: 600px;
+  left: 0px;
+  top: 80px;
   background: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -154,7 +156,6 @@ img {
   padding-bottom: 30px;
 }
 .button {
-  margin-top: 29px;
   padding: 10px 32px;
   border-radius: 4px;
   margin-left: auto;
@@ -241,18 +242,21 @@ img {
 .team-photo:not(last-child) {
   margin-right: 30px;
 }
-.item {
+.item:not(last-child) {
   margin-right: 30px;
+  background: #ffffff;
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-flax {
   display: flex;
-  background: #ffffff;
-  /* material shadow v1 */
-
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+}
+.img-block {
+  max-width: 100%;
+  height: auto;
 }
 
 .team-name-title {
@@ -280,6 +284,7 @@ img {
 /* <!--footer section--> */
 .section-footer {
   font-weight: bold;
+  height: 252px;
   font-size: 26px;
   line-height: 31px;
   background: #2f303a;
@@ -393,6 +398,13 @@ img {
   color: #757575;
 }
 .cardset-item-portfolio:not(:nth-child(3n)) {
-  outline: 1px solid #eeeeee;
   margin-right: 30px;
+}
+.cardset-item-portfolio {
+  background: #ffffff;
+  outline: 1px solid #eeeeee;
+  margin-bottom: 30px;
+}
+.header-portfolio {
+  border-bottom: 1px solid #ececec;
 }
